@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    border: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.form-item {
+    margin: 10px 0;
+}
+
+// .required {
+//         border: 2px solid red;
+//         color: red;        
+// }
+
+.new-student-message {
+        border: 3px solid green;
+        margin: 10px 0;
+        padding: 5px;
+
+}
+
+.button {
+    width: 80%;
+    background-color: green;
+    color: white;
+    padding: 6px 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #dc3545;
+
+    &:hover {
+        background-color: #bb2d3b;
+    }
+}
+
+.input-error {
+    border: 1px solid red;
+
+}
+
+.input-error-message {
+    color: red;
+}
+
+
+
+body {
+    background-color: lightgrey;
+}
+
+.max-width {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.form-container {
+    border: 3px solid gray;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+.select-questions-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.student-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .student-item {
+        min-width: 250px;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+

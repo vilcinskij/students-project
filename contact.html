@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>STUDENTS CONTACTS</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="search" id="search-input">
+    </form>
+
+    <div class="max-width">
+        <div class="form-container" id="student-form">
+            <form action="" novalidate>
+                <div class="form-item">
+                    <label for="student-name">Name:</label>
+                    <input type="text" name="name" id="student-name" class="required" placeholder="Enter your name">
+                </div>
+                <div class="form-item">
+                    <label for="student-surname">Surname:</label>
+                    <input type="text" name="surname" id="student-surname" class="required"
+                        placeholder="Enter your surname">
+                </div>
+                <div class="form-item">
+                    <label for="student-age">Age:</label>
+                    <input type="number" name="age" id="student-age" class="required" placeholder="Enter your age">
+                </div>
+                <div class="form-item">
+                    <label for="student-phone">Phone Nr.:</label>
+                    <input type="number" name="phone" id="student-phone" class="required"
+                        placeholder="Enter your phone">
+                </div>
+                <div class="form-item">
+                    <label for="student-email">Email:</label>
+                    <input type="email" name="email" id="student-email" class="required" placeholder="Enter your email">
+                </div>
+                <div class="form-item">
+                    <label for="student-it-knowledge">IT knowledge:</label>
+                    <input type="range" name="it-knowledge" id="student-it-knowledge" min="1" max="10">
+                    <output id="student-it-knowledge-output"></output>
+                </div>
+                <div class="select-questions-box">
+                    <fieldset class="form-item">
+                        <legend>Select your group</legend>
+
+                        <div class="form-control">
+                            <input type="radio" name="group" id="student-groupe-1" value="FEU 1gr." checked>
+                            <label for="student-groupe-1">FEU 1gr.</label>
+                        </div class="form-control">
+                        <div>
+                            <input type="radio" name="group" id="student-groupe-2" value="FEU 2gr.">
+                            <label for="student-groupe-2">FEU 2gr.</label>
+                        </div class="form-control">
+                        <div>
+                            <input type="radio" name="group" id="student-groupe-3" value="FEU 3gr.">
+                            <label for="student-groupe-3">FEU 3gr.</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="radio" name="group" id="student-groupe-4" value="FEU 4gr.">
+                            <label for="student-groupe-4">FEU 4gr.</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="radio" name="group" id="student-groupe-5" value="FEU 5gr.">
+                            <label for="student-groupe-5">FEU 5gr.</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-item">
+                        <legend>Select interesting languages</legend>
+                        <div class="form-control">
+                            <input type="checkbox" name="interest" id="interest1" value="JavaScript">
+                            <label for="interest1">JavaScript</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interest" id="interest2" value="Java">
+                            <label for="interest2">Java</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="checkbox" name="interest" id="interest3" value="PHP">
+                            <label for="interest3">PHP</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="checkbox" name="interest" id="interest4" value="Python">
+                            <label for="interest4">Python</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="checkbox" name="interest" id="interest5" value="C++">
+                            <label for="interest5">C++</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <input class="button" type="submit" value="Create student">
+            </form>
+        </div>
+        <div class="create-message">
+
+        </div>
+        <div class="student-list" id="student-list">
+        </div>
+    </div>
+
+    </div>
+    <script src="contact.js"></script>
+</body>
+
+</html>
